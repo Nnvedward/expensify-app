@@ -5286,13 +5286,6 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
-"react-addons-shallow-compare@^15.6.3":
-  "integrity" "sha512-EDJbgKTtGRLhr3wiGDXK/+AEJ59yqGS+tKE6mue0aNXT6ZMR7VJbbzIiT6akotmHg1BLj46ElJSb+NBMp80XBg=="
-  "resolved" "https://registry.npmjs.org/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.3.tgz"
-  "version" "15.6.3"
-  dependencies:
-    "object-assign" "^4.1.0"
-
 "react-dates@^21.8.0":
   "integrity" "sha512-PPriGqi30CtzZmoHiGdhlA++YPYPYGCZrhydYmXXQ6RAvAsaONcPtYgXRTLozIOrsQ5mSo40+DiA5eOFHnZ6xw=="
   "resolved" "https://registry.npmjs.org/react-dates/-/react-dates-21.8.0.tgz"
