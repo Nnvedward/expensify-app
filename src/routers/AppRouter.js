@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage'
 import AddExpensePage from '../components/AddExpensePage'
 import EditExpensePage from '../components/EditExpensePage'
@@ -8,20 +8,18 @@ import NotFoundPage from '../components/NotFoundPage'
 import Header from '../components/Header'
 
 const AppRouter = () => (
-    <BrowserRouter>
+    <Router>
         <div>
             <Header />
-            <Routes>
-                <Route path="/" element={<ExpenseDashboardPage />} />
-                <Route path="/create" element={<AddExpensePage />} />
-                <Route path="/edit">
-                    <Route path=":id" element={<EditExpensePage />} />
-                </Route>
-                <Route path="/help" element={<HelpPage />} />
-                <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+            <Switch>
+                <Route path="/" component={ExpenseDashboardPage} exact={true} />
+                <Route path="/create" component={props => <AddExpensePage {...props} />} />
+                <Route path="/edit/:id" component={props => <EditExpensePage {...props} />} />
+                <Route path="/help" component={HelpPage} />
+                <Route component={NotFoundPage} />
+            </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 )
 
 export default AppRouter
