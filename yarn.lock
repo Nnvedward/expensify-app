@@ -1690,9 +1690,9 @@
     "uri-js" "^4.2.2"
 
 "ajv@^8.8.0", "ajv@^8.8.2":
-  "integrity" "sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw=="
-  "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.8.2.tgz"
-  "version" "8.8.2"
+  "integrity" "sha512-qOKJyNj/h+OWx7s5DePL6Zu1KeM9jPZhwBqs+7DzP6bGOvqzVCSf0xueYmVuaC/oQ/VtS2zLMLHdQFbkka+XDQ=="
+  "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.9.0.tgz"
+  "version" "8.9.0"
   dependencies:
     "fast-deep-equal" "^3.1.1"
     "json-schema-traverse" "^1.0.0"
@@ -5823,6 +5823,13 @@
   "integrity" "sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg=="
   "resolved" "https://registry.npmjs.org/min-indent/-/min-indent-1.0.1.tgz"
   "version" "1.0.1"
+
+"mini-css-extract-plugin@^2.5.3":
+  "integrity" "sha512-YseMB8cs8U/KCaAGQoqYmfUuhhGW0a9p9XvWXrxVOkE3/IiISTLw4ALNt7JR5B2eYauFM+PQGSbXMDmVbR7Tfw=="
+  "resolved" "https://registry.npmjs.org/mini-css-extract-plugin/-/mini-css-extract-plugin-2.5.3.tgz"
+  "version" "2.5.3"
+  dependencies:
+    "schema-utils" "^4.0.0"
 
 "minimalistic-assert@^1.0.0":
   "integrity" "sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A=="
