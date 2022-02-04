@@ -1,5 +1,5 @@
 const path = require('path')
-import webpack from 'webpack-cli'
+import webpack from 'webpack'
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
