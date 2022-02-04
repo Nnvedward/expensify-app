@@ -12,6 +12,10 @@
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
+  "engines": {
+    "node": "17.1.0",
+    "npm": "8.1.2"
+  },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
