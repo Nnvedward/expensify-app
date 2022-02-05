@@ -1,6 +1,6 @@
 import { v1 as uuidv1 } from "uuid"
 import db from "../firebase/firebase"
-import { get, push, ref, remove } from "firebase/database"
+import { get, push, ref, remove, update } from "firebase/database"
 
 
 
@@ -37,6 +37,7 @@ export const removeExpense = ({ id } = {}) => ({
     id
 })
 
+
 export const startRemoveExpense = ({ id } = {}) => {
     return (dispatch) => {
         return remove(ref(db, `expenses/${id}`)).then(() => {
@@ -51,6 +52,14 @@ export const editExpense = (id, updates) => ({
     id,
     updates
 })
+
+export const startEditExpense = (id, updates) => {
+    return (dispatch) => {
+        return update(ref(db, `expenses/${id}`), updates).then(() => {
+            dispatch(editExpense(id, updates))
+        })
+    }
+}
 
 // SET_EXPENSES
 export const setExpenses = (expenses) => ({
