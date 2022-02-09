@@ -11,6 +11,7 @@ import { login, logout } from './actions/auth'
 import configureStore from './store/configureStore'
 import './firebase/firebase'
 import { getAuth, onAuthStateChanged } from "firebase/auth"
+import LoadingPage from './components/LoadingPage'
 
 const store = configureStore()
 
@@ -27,7 +28,7 @@ const renderApp = () => {
   }
 }
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'))
+ReactDOM.render(<LoadingPage />, document.getElementById('app'))
 
 const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
