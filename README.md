@@ -21,7 +21,8 @@ In order to have this project up and running you will need:
 
 * NodeJS 10+
 
-***Setup***
+***Setup***  
+
 First, you need to clone this project using one of the links above, using this command:
 
 > git clone https://github.com/Nnvedward/expensify-app.git
