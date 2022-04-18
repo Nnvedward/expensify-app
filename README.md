@@ -29,7 +29,7 @@ First, you need to clone this project using one of the links above, using this c
 
 Then you should run: **npm install**
 
-And afterward, you supposed to run: npm run serve, to run the project in your local machine.
+And afterward, you supposed to run: **npm start**, to run the project in your local machine.
 
 Then head to the localhost on port 8080 **https://localhost:8080**
 
