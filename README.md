@@ -25,7 +25,7 @@ In order to have this project up and running you will need:
 
 First, you need to clone this project using one of the links above, using this command:
 
-> git clone https://github.com/Nnvemeka/expensify-app.git
+> git clone https://github.com/Nnvemeka/expensify.git
 
 Then you should run: **npm install**
 
